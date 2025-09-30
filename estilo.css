@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    background-color: crimson;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1{
+    font-size: 40px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: color .5s;
+}
+
+header nav a:hover{
+    color: blue;
+}
+
+header nav{
+    margin-top: 20px;
+}
+
+body{
+    background-color: #eee;
+}
+
+main{
+    width: 900px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.4); 
+    box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.4);
+}
+
+.partePrincipal img{
+    width: 520px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.partePrincipal{
+    background-color: wheat;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2); 
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.2);
+}
+
+.partePrincipal h2{
+    margin: 20px 0;
+}
+
+
+.artigoFilmeSerie img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.artigoFilmeSerie{
+    border-radius: 10px;
+    width: 250px;
+    background-color: #ddd;
+    padding: 20px 15px;
+}
+
+.artigoFilmeSerie h3{
+    margin: 15px 0;
+}
+
+.containerFilmeSerie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    margin-top: 25px;
+}
