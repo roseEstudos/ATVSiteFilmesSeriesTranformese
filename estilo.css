@@ -101,3 +101,44 @@ footer{
     font-size: 20px;
     margin-top: 25px;
 }
+
+/* Deixando o site responsivo */
+@media (max-width: 1000px) {
+    main{
+        width: 80vw;
+    }
+
+    .artigoFilmeSerie{
+        width: 27.5%;
+    }
+
+    .artigoFilmeSerie img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 850px){
+    .containerFilmeSerie{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .artigoFilmeSerie{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .artigoFilmeSerie img{
+        height: 100%;
+    }
+
+    .partePrincipal img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    main{
+        width: 75vw;
+    }
+}
