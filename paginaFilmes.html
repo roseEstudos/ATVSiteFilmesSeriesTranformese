@@ -9,11 +9,17 @@
     </head>
     <body>
         <header>
-             <div class="headerMobile">
+            <input type="checkbox" id="menu-toggle" class="hidden-checkbox">
+            
+            <div class="headerMobile">
                 <h1>Portal filmes & Séries</h1>
-                <img src="imgs/iconeMenu.svg" alt="Menu">
+                
+                <label for="menu-toggle" class="menu-label">
+                    <img src="imgs/iconeMenu.svg" alt="Menu">
+                </label>
+                
             </div>
-            <nav>
+            <nav class="menu-navegacao">
                 <a href="index.html">Inicío</a>
                 <a href="paginaFilmes.html">Filmes</a>
                 <a href="">Séries</a>

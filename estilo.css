@@ -4,8 +4,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Adicione estas regras no topo do seu arquivo estilo.css */
-
 /* 1. Esconde o checkbox real. Ele só serve para guardar o estado (checado ou não). */
 .hidden-checkbox {
     display: none;
@@ -14,6 +12,10 @@
 /* 2. Estilo para garantir que o menu-label (ícone) tenha o comportamento de um botão */
 .menu-label {
     cursor: pointer;
+}
+
+.headerMobile img{
+        display: none;
 }
 
 header{
@@ -127,10 +129,6 @@ footer{
     .artigoFilmeSerie img{
         width: 100%;
     }
-
-    .headerMobile img{
-        display: none;
-    }
 }
 
 @media(max-width: 850px){
@@ -154,81 +152,46 @@ footer{
     }
 }
 
-/* @media (max-width: 600px) {
-    header nav{
-        display: none;
-    }
-
-    header h1{
-        font-size: 25px;
-        text-align: left;
-        padding: 20px 30px;
-    }
-
-    .headerMobile{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .headerMobile img{
-        display: inline;
-        width: 30px;
-    }
-
-    .headerMobile img:hover{
-        cursor: pointer;
-    }
-} */
-
-/* Localize esta seção no final do seu estilo.css */
-
 @media (max-width: 600px) {
-    /* 1. Remove esta regra antiga. Agora vamos controlar a exibição com a lógica do checkbox. */
-    /* header nav{
-        display: none;
-    } */
-
-    /* Regras do menu mobile (Ajustamos a exibição da navegação) */
-    .menu-navegacao { /* Usando a nova classe que adicionamos */
-        /* Transforma o menu em uma coluna vertical de links */
+    .menu-navegacao {
         display: flex;
         flex-direction: column;
-        text-align: left; /* Alinha os links à esquerda */
-        padding: 0 30px 10px 30px; /* Adiciona padding para o menu não grudar nas bordas */
-        
+        text-align: left;
+        padding: 0 30px 10px 30px;
+        background-color: crimson;
+        left: 0;
+        width: 100%;
+        z-index: 10000; 
+        position: absolute;
+
         /* O truque para ESCONDER o menu por padrão (modo mobile) */
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease-in-out; /* Adiciona uma transição suave */
+        transition: max-height 0.3s ease-in-out;
     }
 
     header nav a {
-        /* Garante que os links fiquem separados verticalmente */
         margin: 10px 0;
         padding: 5px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Linha divisória */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    /* REGRA MÁGICA: O que acontece quando o checkbox está ativado (:checked) */
+    /* O que acontece quando o checkbox está ativado (:checked) */
     #menu-toggle:checked ~ .menu-navegacao {
-        /* Seleciona o elemento irmão (~) com a classe .menu-navegacao
-           que está logo depois do checkbox#menu-toggle.
-           Ao clicar, ele expande a altura para aparecer o menu. */
-        max-height: 300px; /* Um valor grande o suficiente para exibir todo o menu */
+        max-height: 300px;
     }
     
-    /* Demais regras que você já tinha: */
     header h1{
         font-size: 25px;
         text-align: left;
-        padding: 20px 0; /* Ajustei o padding aqui, pois a div mobile vai cuidar do restante */
+        padding: 20px 0;
     }
 
     .headerMobile{
         display: flex;
         justify-content: space-between;
-        align-items: center; /* Centraliza verticalmente o título e o ícone */
-        padding: 0 30px; /* Adiciona o padding horizontal que estava no h1 */
+        align-items: center;
+        padding: 0 30px;
     }
 
     .headerMobile img{
