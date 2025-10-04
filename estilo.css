@@ -97,8 +97,12 @@ main{
     padding: 20px 15px;
 }
 
-.artigoFilmeSerie h3{
+.artigoFilmeSerie h3,h2{
     margin: 15px 0;
+}
+
+.artigoFilmeSerie h2{
+    font-size: 13px;
 }
 
 .containerFilmeSerie{
@@ -131,7 +135,7 @@ footer{
     }
 }
 
-@media(max-width: 850px){
+@media (max-width: 850px){
     .containerFilmeSerie{
         flex-direction: column;
         width: 95%;
