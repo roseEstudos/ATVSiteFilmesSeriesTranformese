@@ -1,0 +1,35 @@
+.secaoForm h2 {
+  margin-bottom: 20px;
+}
+
+.secaoForm form input {
+  border-radius: 7.5px;
+  border: 0.5px solid black;
+}
+
+.secaoForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+.secaoForm form {
+  text-align: left;
+}
+
+.margem-label {
+  margin-right: 15px;
+}
+
+.secaoForm {
+  width: 300px;
+  margin: auto;
+}
+
+.secaoForm form button {
+  background-color: crimson;
+  border: none;
+  padding: 5px;
+  color: white;
+  border-radius: 10px;
+}
